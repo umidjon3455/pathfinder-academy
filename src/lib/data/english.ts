@@ -1,0 +1,61 @@
+// 50 ta inglizcha test/savol — gramatika, lug'at, tarjima
+export interface Question {
+  id: number;
+  question: string;
+  options: string[];
+  answer: number; // index
+  explanation?: string;
+}
+
+export const englishQuestions: Question[] = [
+  { id: 1, question: "Choose the correct article: ___ apple a day keeps the doctor away.", options: ["A", "An", "The", "—"], answer: 1, explanation: "Unli tovush oldidan 'an' ishlatiladi." },
+  { id: 2, question: "She ___ to the gym every morning.", options: ["go", "goes", "going", "gone"], answer: 1 },
+  { id: 3, question: "What is the past tense of 'run'?", options: ["runned", "ran", "run", "runs"], answer: 1 },
+  { id: 4, question: "Tarjima: 'Kitob' inglizchada qanday?", options: ["Pen", "Book", "Door", "Table"], answer: 1 },
+  { id: 5, question: "I have ___ in the park for an hour.", options: ["walk", "walking", "been walking", "walked been"], answer: 2 },
+  { id: 6, question: "Choose the synonym of 'happy':", options: ["Sad", "Joyful", "Angry", "Tired"], answer: 1 },
+  { id: 7, question: "He is taller ___ his brother.", options: ["then", "than", "that", "as"], answer: 1 },
+  { id: 8, question: "Which is a noun?", options: ["Quickly", "Beautiful", "Computer", "Run"], answer: 2 },
+  { id: 9, question: "If I ___ rich, I would travel the world.", options: ["am", "was", "were", "be"], answer: 2, explanation: "Ikkinchi conditional — 'were' ishlatiladi." },
+  { id: 10, question: "Tarjima: 'Salom, qalaysan?'", options: ["Hello, how are you?", "Goodbye, see you", "Thank you", "What time is it?"], answer: 0 },
+  { id: 11, question: "The book ___ on the table.", options: ["are", "is", "am", "be"], answer: 1 },
+  { id: 12, question: "Antonym of 'cold':", options: ["Cool", "Hot", "Warm", "Ice"], answer: 1 },
+  { id: 13, question: "She ___ TV when I called.", options: ["watch", "was watching", "watched", "watches"], answer: 1 },
+  { id: 14, question: "Plural of 'child':", options: ["childs", "childes", "children", "childrens"], answer: 2 },
+  { id: 15, question: "I look forward ___ you.", options: ["to see", "seeing", "to seeing", "see"], answer: 2 },
+  { id: 16, question: "Choose: ___ you like some tea?", options: ["Do", "Would", "Are", "Is"], answer: 1 },
+  { id: 17, question: "Tarjima: 'Maktab' inglizchada:", options: ["School", "Hospital", "Office", "Shop"], answer: 0 },
+  { id: 18, question: "He has lived here ___ 2010.", options: ["for", "since", "from", "at"], answer: 1 },
+  { id: 19, question: "Which is correct?", options: ["I am agree", "I agree", "I agreeing", "I agrees"], answer: 1 },
+  { id: 20, question: "The opposite of 'expensive':", options: ["Costly", "Cheap", "Rich", "Poor"], answer: 1 },
+  { id: 21, question: "By the time we arrived, the movie ___.", options: ["started", "had started", "has started", "starts"], answer: 1 },
+  { id: 22, question: "Tarjima: 'Rahmat' inglizchada:", options: ["Sorry", "Please", "Thank you", "Welcome"], answer: 2 },
+  { id: 23, question: "Choose the correct preposition: I'm good ___ math.", options: ["in", "on", "at", "with"], answer: 2 },
+  { id: 24, question: "Comparative of 'good':", options: ["gooder", "better", "best", "more good"], answer: 1 },
+  { id: 25, question: "She doesn't speak English, ___?", options: ["does she", "doesn't she", "is she", "do she"], answer: 0 },
+  { id: 26, question: "Tarjima: 'Sevgi' inglizchada:", options: ["Hate", "Love", "Like", "Friend"], answer: 1 },
+  { id: 27, question: "The cake ___ by my mother.", options: ["baked", "was baked", "baking", "is bake"], answer: 1 },
+  { id: 28, question: "Choose: There ___ many people here.", options: ["is", "are", "was", "be"], answer: 1 },
+  { id: 29, question: "Synonym of 'big':", options: ["Small", "Tiny", "Large", "Short"], answer: 2 },
+  { id: 30, question: "I wish I ___ more time.", options: ["have", "had", "having", "has"], answer: 1 },
+  { id: 31, question: "Tarjima: 'Vaqt' inglizchada:", options: ["Time", "Money", "Day", "Year"], answer: 0 },
+  { id: 32, question: "He ___ already finished his work.", options: ["have", "has", "is", "had"], answer: 1 },
+  { id: 33, question: "Choose: I ___ rather stay home.", options: ["will", "would", "can", "should"], answer: 1 },
+  { id: 34, question: "Plural of 'mouse' (animal):", options: ["mouses", "mice", "mouse", "mices"], answer: 1 },
+  { id: 35, question: "She is interested ___ music.", options: ["on", "at", "in", "with"], answer: 2 },
+  { id: 36, question: "Tarjima: 'Bola' inglizchada:", options: ["Adult", "Child", "Man", "Woman"], answer: 1 },
+  { id: 37, question: "I ___ you for 5 years.", options: ["know", "have known", "knew", "knowing"], answer: 1 },
+  { id: 38, question: "Antonym of 'fast':", options: ["Quick", "Slow", "Rapid", "Speedy"], answer: 1 },
+  { id: 39, question: "Choose: Could you ___ me a favor?", options: ["make", "do", "give", "take"], answer: 1 },
+  { id: 40, question: "Superlative of 'bad':", options: ["worse", "worst", "baddest", "more bad"], answer: 1 },
+  { id: 41, question: "Tarjima: 'Dars' inglizchada:", options: ["Lesson", "Game", "Sport", "Food"], answer: 0 },
+  { id: 42, question: "If it rains, we ___ stay home.", options: ["will", "would", "are", "have"], answer: 0 },
+  { id: 43, question: "He suggested ___ a break.", options: ["to take", "taking", "take", "taken"], answer: 1 },
+  { id: 44, question: "Choose the right form: 'It's important ___ exercise.'", options: ["to", "for", "in", "of"], answer: 0 },
+  { id: 45, question: "Tarjima: 'Til' inglizchada:", options: ["Speak", "Word", "Language", "Talk"], answer: 2 },
+  { id: 46, question: "Choose: This is the man ___ helped me.", options: ["which", "who", "whose", "whom"], answer: 1 },
+  { id: 47, question: "She is afraid ___ spiders.", options: ["from", "of", "with", "by"], answer: 1 },
+  { id: 48, question: "Used to + base form means:", options: ["future plan", "past habit", "present action", "ability"], answer: 1 },
+  { id: 49, question: "Tarjima: 'O'qituvchi' inglizchada:", options: ["Student", "Doctor", "Teacher", "Worker"], answer: 2 },
+  { id: 50, question: "Choose the most polite request:", options: ["Give me water!", "Water!", "Could you please give me some water?", "I want water now."], answer: 2 },
+];
